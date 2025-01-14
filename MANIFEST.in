@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include business_centre_app *.css
+recursive-include business_centre_app *.csv
+recursive-include business_centre_app *.html
+recursive-include business_centre_app *.ico
+recursive-include business_centre_app *.js
+recursive-include business_centre_app *.json
+recursive-include business_centre_app *.md
+recursive-include business_centre_app *.png
+recursive-include business_centre_app *.py
+recursive-include business_centre_app *.svg
+recursive-include business_centre_app *.txt
+recursive-exclude business_centre_app *.pyc
