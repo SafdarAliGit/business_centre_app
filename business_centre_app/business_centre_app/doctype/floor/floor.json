@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:floor_name",
+ "creation": "2025-01-14 20:22:12.160619",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "floor_name",
+  "occupancy",
+  "column_break_upqnx",
+  "no_of_office",
+  "no_of_cubicles"
+ ],
+ "fields": [
+  {
+   "fieldname": "floor_name",
+   "fieldtype": "Data",
+   "label": "Floor Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "occupancy",
+   "fieldtype": "Int",
+   "label": "Occupancy"
+  },
+  {
+   "fieldname": "no_of_office",
+   "fieldtype": "Int",
+   "label": "No Of Office"
+  },
+  {
+   "fieldname": "no_of_cubicles",
+   "fieldtype": "Int",
+   "label": "No Of Cubicles"
+  },
+  {
+   "fieldname": "column_break_upqnx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-15 16:04:21.689914",
+ "modified_by": "Administrator",
+ "module": "Business Centre App",
+ "name": "Floor",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

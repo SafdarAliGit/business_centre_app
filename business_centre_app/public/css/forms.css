@@ -1,0 +1,7 @@
+/*.control-input > .form-control {*/
+/*    background-color: #b4ffc5;*/
+/*}*/
+
+.input-with-feedback.form-control {
+    background-color: #b4ffc5;
+}

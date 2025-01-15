@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:office_no",
+ "creation": "2025-01-15 07:28:42.613594",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "office_no",
+  "building",
+  "floor",
+  "column_break_xqckl",
+  "office_area",
+  "status",
+  "section_break_n7fkt",
+  "office_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "office_no",
+   "fieldtype": "Data",
+   "label": "Office No",
+   "unique": 1
+  },
+  {
+   "fieldname": "building",
+   "fieldtype": "Link",
+   "label": "Building",
+   "options": "Business Centre"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Link",
+   "label": "Floor",
+   "options": "Floor"
+  },
+  {
+   "fieldname": "office_area",
+   "fieldtype": "Float",
+   "label": "Office Area"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Occupied\nVacated\nExpired But Occupied\nBooked"
+  },
+  {
+   "fieldname": "office_item",
+   "fieldtype": "Table",
+   "label": "Office Item",
+   "options": "Office Item"
+  },
+  {
+   "fieldname": "column_break_xqckl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_n7fkt",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-15 16:00:36.044883",
+ "modified_by": "Administrator",
+ "module": "Business Centre App",
+ "name": "Office",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

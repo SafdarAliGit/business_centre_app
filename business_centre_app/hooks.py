@@ -9,7 +9,7 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
-
+app_include_css = "/assets/business_centre_app/css/forms.css"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/business_centre_app/css/business_centre_app.css"
 # app_include_js = "/assets/business_centre_app/js/business_centre_app.js"

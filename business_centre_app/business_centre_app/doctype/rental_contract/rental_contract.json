@@ -1,0 +1,283 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CON-.YY.-.####",
+ "creation": "2025-01-14 20:24:38.968729",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contract_no",
+  "contract_date",
+  "amended_from",
+  "representative_name",
+  "column_break_f1qya",
+  "company_id",
+  "license_no",
+  "lic_expiry_date",
+  "column_break_5hlds",
+  "contact_no",
+  "company_type",
+  "company_name",
+  "column_break_wotkz",
+  "whatsapp_no",
+  "email_address",
+  "office_detail_section",
+  "office_no",
+  "column_break_g2d11",
+  "building",
+  "column_break_cy7iq",
+  "office_area",
+  "payment_and_charges_section",
+  "commencing_date",
+  "expiry_date",
+  "column_break_9ttu1",
+  "rental_amount",
+  "special_discount",
+  "column_break_37e4v",
+  "contract_amount",
+  "vat_",
+  "column_break_8nip2",
+  "vat_amount",
+  "net_amount",
+  "payment_detail_section",
+  "payment_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rental Contract",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fetch_from": "company_id.customer_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fetch_from": "company_id.contact_person",
+   "fieldname": "representative_name",
+   "fieldtype": "Data",
+   "label": "Representative Name",
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fetch_from": "company_id.license_no",
+   "fieldname": "license_no",
+   "fieldtype": "Data",
+   "label": "License No",
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fetch_from": "company_id.lic_expiry_date",
+   "fieldname": "lic_expiry_date",
+   "fieldtype": "Data",
+   "label": "Lic Expiry Date",
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fetch_from": "company_id.mobile_no",
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "label": "Contact No",
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fetch_from": "company_id.customer_type",
+   "fieldname": "company_type",
+   "fieldtype": "Data",
+   "label": "Company Type",
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fetch_from": "company_id.whatsapp_no",
+   "fieldname": "whatsapp_no",
+   "fieldtype": "Data",
+   "label": "Whatsapp No",
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fetch_from": "company_id.email_id",
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "office_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Office Detail"
+  },
+  {
+   "default": "Today",
+   "fieldname": "contract_date",
+   "fieldtype": "Date",
+   "label": "Contract Date"
+  },
+  {
+   "default": "Now",
+   "fieldname": "commencing_date",
+   "fieldtype": "Date",
+   "label": "Commencing Date"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "office_no",
+   "fieldtype": "Link",
+   "label": "Office No",
+   "options": "Office"
+  },
+  {
+   "fetch_from": "office_no.building",
+   "fieldname": "building",
+   "fieldtype": "Data",
+   "label": "Building"
+  },
+  {
+   "fetch_from": "office_no.office_area",
+   "fieldname": "office_area",
+   "fieldtype": "Data",
+   "label": "Office Area"
+  },
+  {
+   "fieldname": "payment_and_charges_section",
+   "fieldtype": "Section Break",
+   "label": "Payment And Charges"
+  },
+  {
+   "fieldname": "rental_amount",
+   "fieldtype": "Currency",
+   "label": "Rental Amount"
+  },
+  {
+   "fieldname": "special_discount",
+   "fieldtype": "Currency",
+   "label": "Special Discount"
+  },
+  {
+   "default": "0",
+   "fieldname": "contract_amount",
+   "fieldtype": "Currency",
+   "label": "Contract Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vat_",
+   "fieldtype": "Percent",
+   "label": "VAT %"
+  },
+  {
+   "default": "0",
+   "fieldname": "vat_amount",
+   "fieldtype": "Currency",
+   "label": "VAT Amount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "label": "Net Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Detail"
+  },
+  {
+   "fieldname": "payment_detail",
+   "fieldtype": "Table",
+   "label": "Payment Detail",
+   "options": "Payment Detail"
+  },
+  {
+   "fieldname": "column_break_f1qya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_5hlds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wotkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_g2d11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cy7iq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9ttu1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_37e4v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8nip2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Link",
+   "label": "Company ID",
+   "options": "Customer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-15 20:19:16.419389",
+ "modified_by": "Administrator",
+ "module": "Business Centre App",
+ "name": "Rental Contract",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
